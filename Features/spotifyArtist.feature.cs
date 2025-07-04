@@ -101,16 +101,17 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 await this.ScenarioStartAsync();
 #line 5
- await testRunner.GivenAsync("the access token", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+ await testRunner.GivenAsync("the artist endpoint as an api \"https://api.spotify.com/v1/artists/1Xyo4u8uXC1ZmMp" +
+                        "atF05PJ\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 6
- await testRunner.AndAsync("the artist endpoint as an api endpoint", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync("a valid access token", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 7
  await testRunner.WhenAsync("the artist to be searched is TheWeeknd", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 8
- await testRunner.ThenAsync("the artist that is fetched is \"TheWeeknd\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+ await testRunner.ThenAsync("the artist that is fetched is \"The Weeknd\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
